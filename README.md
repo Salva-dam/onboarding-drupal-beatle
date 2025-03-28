@@ -16,13 +16,13 @@ Antes de comenzar, asegúrate de tener instalados en tu sistema:
 ### 1️⃣ Clonar el repositorio
 Ejecuta el siguiente comando para clonar el proyecto:
 ```bash
-git clone git@github.com:campus-CodeArts/onboarding-drupal.git
+git clone git@github.com:campus-CodeArts/onboarding-drupal-beatle.git
 ```
 
 ### 2️⃣ Levantar los contenedores
 Para iniciar los servicios en segundo plano ejecuta dentro de la carpeta:
 ```bash
-docker-compose up -d
+docker compose up -d
 ```
 📌 **Nota:** La primera vez que inicies los servicios, puede tardar un rato en configurarse completamente.
 
@@ -42,17 +42,17 @@ Deberías ver dos contenedores en ejecución: **drupal_app**, y **drupal_db**.
 ## 🔄 Detener y Reiniciar los Contenedores
 Si deseas detener los contenedores en ejecución:
 ```bash
-docker-compose down
+docker compose down
 ```
 Para volver a iniciarlos:
 ```bash
-docker-compose up -d
+docker compose up -d
 ```
 
 ## 🧹 Eliminar los Contenedores y Datos Persistentes
 Si quieres eliminar los contenedores junto con los volúmenes y datos almacenados:
 ```bash
-docker-compose down -v
+docker compose down -v
 ```
 ⚠️ **Advertencia:** Esto eliminará todos los datos almacenados en la base de datos.
 
@@ -60,7 +60,7 @@ docker-compose down -v
 ## 🎯 Notas Finales
 Para ver los registros en tiempo real:
   ```bash
-  docker-compose logs -f
+  docker compose logs -f
   ```
 
 Si el contenedor **drupal_app** no se levanta elimina los contenedores y vuelve a levantarlos
