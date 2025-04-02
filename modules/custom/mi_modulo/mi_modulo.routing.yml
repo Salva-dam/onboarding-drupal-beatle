@@ -1,0 +1,15 @@
+mi_modulo.mensaje:
+  path: '/mi-servicio'
+  defaults:
+    _controller: '\Drupal\mi_modulo\Controller\MiModuloController::mostrarMensaje'
+    _title: 'Mensaje desde el Servicio'
+  requirements:
+    _permission: 'access content'
+
+mi_modulo.prueba_logger:
+  path: '/mi-modulo/logger'
+  defaults:
+    _controller: '\Drupal\mi_modulo\Controller\MiModuloController::pruebaLogger'
+    _title: 'Prueba de Logger'
+  requirements:
+    _permission: 'access content'

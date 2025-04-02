@@ -1,0 +1,7 @@
+name: 'Mi Módulo'
+type: module
+description: 'Módulo con un formulario que almacena datos en la base de datos.'
+package: Custom
+core_version_requirement: ^9 || ^10
+dependencies:
+  - drupal:block

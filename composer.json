@@ -1,0 +1,32 @@
+{
+  "name": "drupal/project",
+  "type": "project",
+  "description": "Instalación de Drupal 10",
+  "require": {
+    "drupal/core-recommended": "^10.5",
+    "drupal/core-composer-scaffold": "^10",
+    "drupal/core-project-message": "^10",
+    "drupal/core-vendor-hardening": "^10",
+    "drush/drush": "^13.4"
+  },
+  "config": {
+    "preferred-install": "dist",
+    "optimize-autoloader": true,
+    "platform": {
+      "php": "8.3"
+    },
+    "allow-plugins": {
+      "drupal/core-composer-scaffold": true,
+      "drupal/core-project-message": true,
+      "drupal/core-vendor-hardening": true
+    }
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://packages.drupal.org/8"
+    }
+  ],
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
