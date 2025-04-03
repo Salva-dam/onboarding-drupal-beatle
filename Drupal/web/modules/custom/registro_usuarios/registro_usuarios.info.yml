@@ -1,0 +1,8 @@
+name: 'Registro de Usuarios'
+type: module
+description: 'Módulo para registrar usuarios y almacenarlos en la base de datos.'
+core_version_requirement: ^9 || ^10
+package: 'Custom'
+dependencies:
+  - drupal:field
+  - drupal:node
